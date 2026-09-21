@@ -1,2 +1,7 @@
-<h1><%= @message %></h1>
-<p>これはRailsで作った最初のページです。</p>
+<h1>メモ一覧</h1>
+
+<ul>
+  <% @memos.each do |memo| %>
+    <li><%= memo %></li>
+  <% end %>
+</ul>
